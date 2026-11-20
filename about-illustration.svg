@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Background Aura -->
+  <circle cx="250" cy="225" r="160" fill="#f8fafc" />
+  <circle cx="250" cy="225" r="130" fill="#f1f5f9" />
+  
+  <!-- Desk/Base Plate -->
+  <ellipse cx="250" cy="380" rx="190" ry="30" fill="#e2e8f0" opacity="0.6" />
+
+  <!-- Central Target / Goal / Achievement -->
+  <g filter="url(#shadow)">
+    <!-- Main Board / Tablet -->
+    <rect x="130" y="80" width="240" height="270" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+    
+    <!-- Top badge -->
+    <rect x="160" y="110" width="70" height="24" rx="12" fill="#eff6ff" />
+    <text x="195" y="126" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#2563eb" text-anchor="middle">PROFIL</text>
+    
+    <rect x="160" y="145" width="180" height="12" rx="6" fill="#1e293b" />
+    <rect x="160" y="165" width="130" height="8" rx="4" fill="#94a3b8" />
+    
+    <!-- Experience timeline bars -->
+    <line x1="160" y1="200" x2="160" y2="300" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4 4" />
+    
+    <circle cx="160" cy="210" r="6" fill="#4f46e5" />
+    <rect x="175" y="204" width="130" height="12" rx="4" fill="#e2e8f0" />
+    <rect x="175" y="204" width="75" height="12" rx="4" fill="#4f46e5" opacity="0.8" />
+    
+    <circle cx="160" cy="250" r="6" fill="#06b6d4" />
+    <rect x="175" y="244" width="145" height="12" rx="4" fill="#e2e8f0" />
+    <rect x="175" y="244" width="105" height="12" rx="4" fill="#06b6d4" opacity="0.8" />
+
+    <circle cx="160" cy="290" r="6" fill="#10b981" />
+    <rect x="175" y="284" width="120" height="12" rx="4" fill="#e2e8f0" />
+    <rect x="175" y="284" width="90" height="12" rx="4" fill="#10b981" opacity="0.8" />
+  </g>
+
+  <!-- Floating Achievement Medals / Badges -->
+  <g filter="url(#shadow)" transform="translate(60, 160)">
+    <circle cx="35" cy="35" r="32" fill="#ffffff" stroke="#f1f5f9" stroke-width="2" />
+    <circle cx="35" cy="35" r="22" fill="#fef3c7" />
+    <!-- Star icon -->
+    <path d="M35 23 L38 31 L47 31 L40 36 L43 45 L35 40 L27 45 L30 36 L23 31 L32 31 Z" fill="#d97706" />
+  </g>
+
+  <g filter="url(#shadow)" transform="translate(340, 110)">
+    <rect x="0" y="0" width="95" height="60" rx="12" fill="#ffffff" stroke="#e0e7ff" stroke-width="1.5" />
+    <text x="47" y="26" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-anchor="middle">Komitmen</text>
+    <text x="47" y="47" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#2563eb" text-anchor="middle">100%</text>
+  </g>
+
+  <g filter="url(#shadow)" transform="translate(330, 260)">
+    <circle cx="35" cy="35" r="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+    <!-- Lightbulb / Innovation icon -->
+    <path d="M35 20 C28 20 23 25 23 31 C23 35 26 38 28 41 L28 44 C28 45 29 46 30 46 L40 46 C41 46 42 45 42 44 L42 41 C44 38 47 35 47 31 C47 25 42 20 35 20 Z" fill="#f59e0b" />
+    <rect x="31" y="47" width="8" height="2" fill="#d97706" />
+  </g>
+</svg>

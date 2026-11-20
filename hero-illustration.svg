@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="bgBlob" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0e7ff" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#dbeafe" stop-opacity="0.4" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1e1b4b" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Blobs -->
+  <path d="M420,120 Q500,200 460,320 Q420,440 290,420 Q160,400 130,280 Q100,160 220,100 Q340,40 420,120 Z" fill="url(#bgBlob)" />
+  <circle cx="480" cy="110" r="16" fill="#60a5fa" opacity="0.4" />
+  <circle cx="110" cy="380" r="22" fill="#818cf8" opacity="0.3" />
+
+  <!-- Code Editor Window -->
+  <g filter="url(#softShadow)">
+    <rect x="110" y="80" width="380" height="260" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+    <!-- Window Bar -->
+    <path d="M110,96 A16,16 0 0,1 126,80 L474,80 A16,16 0 0,1 490,96 L490,116 L110,116 Z" fill="#f8fafc" />
+    <circle cx="134" cy="98" r="5" fill="#f87171" />
+    <circle cx="150" cy="98" r="5" fill="#fbbf24" />
+    <circle cx="166" cy="98" r="5" fill="#34d399" />
+    <rect x="220" y="92" width="160" height="12" rx="6" fill="#e2e8f0" />
+
+    <!-- Code Lines Mockup -->
+    <rect x="135" y="140" width="100" height="10" rx="4" fill="#4f46e5" opacity="0.8" />
+    <rect x="245" y="140" width="60" height="10" rx="4" fill="#06b6d4" opacity="0.8" />
+    <rect x="155" y="165" width="140" height="10" rx="4" fill="#94a3b8" />
+    <rect x="305" y="165" width="80" height="10" rx="4" fill="#3b82f6" opacity="0.7" />
+    
+    <rect x="155" y="190" width="85" height="10" rx="4" fill="#f59e0b" opacity="0.8" />
+    <rect x="250" y="190" width="160" height="10" rx="4" fill="#94a3b8" />
+    
+    <rect x="155" y="215" width="120" height="10" rx="4" fill="#10b981" opacity="0.8" />
+    
+    <rect x="135" y="240" width="45" height="10" rx="4" fill="#4f46e5" opacity="0.8" />
+
+    <!-- Mini chart bar inside IDE -->
+    <rect x="135" y="275" width="330" height="40" rx="8" fill="#f1f5f9" />
+    <rect x="150" y="295" width="40" height="8" rx="4" fill="#3b82f6" />
+    <rect x="200" y="287" width="40" height="16" rx="4" fill="#6366f1" />
+    <rect x="250" y="291" width="40" height="12" rx="4" fill="#06b6d4" />
+    <rect x="300" y="283" width="40" height="20" rx="4" fill="#10b981" />
+  </g>
+
+  <!-- Floating Cards & Tech Badges -->
+  <g filter="url(#softShadow)">
+    <rect x="60" y="210" width="110" height="75" rx="12" fill="#ffffff" stroke="#e0e7ff" stroke-width="1.5" />
+    <circle cx="90" cy="235" r="14" fill="#e0e7ff" />
+    <path d="M85 235 L95 235 M90 230 L90 240" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" />
+    <rect x="75" y="258" width="80" height="6" rx="3" fill="#64748b" />
+    <rect x="75" y="268" width="50" height="6" rx="3" fill="#cbd5e1" />
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="420" y="260" width="130" height="85" rx="12" fill="#ffffff" stroke="#e0e7ff" stroke-width="1.5" />
+    <circle cx="450" cy="290" r="14" fill="#dcfce7" />
+    <path d="M445 290 L448 294 L456 286" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <rect x="472" y="282" width="60" height="7" rx="3.5" fill="#334155" />
+    <rect x="472" y="295" width="40" height="6" rx="3" fill="#94a3b8" />
+    <rect x="435" y="322" width="100" height="10" rx="5" fill="#f1f5f9" />
+    <rect x="435" y="322" width="75" height="10" rx="5" fill="url(#primaryGrad)" />
+  </g>
+
+  <!-- Floating JavaScript Badge -->
+  <g filter="url(#softShadow)">
+    <rect x="360" y="45" width="60" height="60" rx="14" fill="#fef08a" stroke="#fde047" stroke-width="1.5" />
+    <text x="390" y="85" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#854d0e" text-anchor="middle">JS</text>
+  </g>
+
+  <!-- Sparkles -->
+  <path d="M200 40 L204 48 L212 52 L204 56 L200 64 L196 56 L188 52 L196 48 Z" fill="#f59e0b" />
+  <path d="M480 390 L483 396 L490 399 L483 402 L480 408 L477 402 L470 399 L477 396 Z" fill="#6366f1" />
+</svg>
